@@ -1,4 +1,89 @@
+/* Global styles to remove all default styling */
 *{
     margin: 0;
     padding: 0;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space space-between;
+}
+
+.menu_button{
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+
+    border: none;
+    text-decoration: none;
+
+    color: white;
+    background-color: #2D2F98;
+    font-size: 1.5vh;
+
+    margin: 18px;
+}
+
+/* Home page styling */
+body{
+    background: url('../Assets/home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+
+.home_left{
+    background-color: #2D2F98;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home_logo{
+    width: 35vh;
+}
+
+.home_heading{
+    margin: 4vh;
+    color: white;
+    font-size: 4vh;
+    font-weight: lighter;
+}
+
+.learn_more_button{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+    margin: auto;
+    margin-top: 0vh;
+    margin-bottom: 20vh;
+
+
+    align-items: center;
+
+    width: 200px;
+
+    color: white;
+    background-color: #2D2F98;
+    border-color: white;
+    border-radius: 15px;
+    border-width: 0.5vh;
+    border-style: solid;
+
+    font-weight: bold;
+    font-size: 2vh;
+
 }
