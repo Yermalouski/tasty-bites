@@ -287,27 +287,34 @@ h3{
 
 }
 
-@media only screen and (max-width: 500px) {
-    .home_logo{
-        width: 300px;
+@media only screen and (max-width: 810px) {
+    .home_navigation_buttons{
+        justify-content: flex-start;
     }
 
-    .home_heading{
-        font-size: 0px;
+    .home_navigation_button{
+        font-size: 12px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 
-@media only screen and (max-width: 735px) {
-    .home_navigation_button{
-        font-size: 14px;
+@media only screen and (max-width: 650px) {
+    .home_avigation_button{
+        font-size: 10px;
         margin-left: 10px;
         margin-right: 10px;
     }
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 545px) {
     .home_navigation_button{
-        font-size: 12px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .home_logo{
+        width: 30vh;
     }
 }
 
