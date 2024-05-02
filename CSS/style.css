@@ -120,6 +120,7 @@ h3{
 .sub_title{
     font-weight: lighter;
     padding-bottom: 20px;
+    font-size: 24px;
 }
 
 /* Global footer page styling */
@@ -443,3 +444,38 @@ h3{
         height: 0px;
     }
 }
+
+/* Menu page styling */
+
+/* Booking page styling */
+
+/* Gallery page styling */
+
+/* Location page styling */
+
+.location_title{
+    font-size: 72px;
+    font-weight: lighter;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.location_information{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.location_left{
+    width: 50%;
+    text-align: center;
+}
+
+.location_right{
+    width: 50%;
+}
+
+/* Socials page styling */
