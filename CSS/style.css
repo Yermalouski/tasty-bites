@@ -463,6 +463,7 @@ h3{
 .location_information{
     display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     padding-left: 20px;
@@ -470,12 +471,32 @@ h3{
 }
 
 .location_left{
-    width: 50%;
-    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .location_right{
-    width: 50%;
+    max-width: 1000px;
+}
+
+.location_button{
+    width: 200px;
+
+    color: black;
+    background-color: white;
+    border-color: black;
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: solid;
+    font-weight: bold;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.location_button:hover{
+    cursor: pointer;
 }
 
 /* Socials page styling */
