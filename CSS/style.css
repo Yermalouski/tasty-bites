@@ -297,7 +297,7 @@ h3{
 @media only screen and (max-width: 410px) {
     .home_navigation_buttons{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1frs  ;
         justify-items: center;
     }
 }
