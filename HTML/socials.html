@@ -15,7 +15,7 @@
   </head>
 
   <!-- Body Tag -->
-  <body class="navigation_body">
+  <body class="socials_body">
     <!-- Navigation -->
     <div class="navigation_bar">
       <div class="navigation_buttons">
@@ -57,23 +57,55 @@
 
     <!-- xxx Page -->
     <div class="socials_information">
+
+      <h3 class="socials_title">Socials.</h3>
+
       <form class="socials_form" action="/PHP/action_page.php">
-        <label for="email">Email:   </label>
-        <input class="socials_form_input" type="text" id="fname" name="fname"><br>
+        <label for="email">Email:</label>
+        <input class="socials_form_input" type="text" id="fname" name="fname">
 
-        <label for="subject">Subject:</label>
-        <input class="socials_form_input" type="text" id="lname" name="lname"><br>
+        <label for="subject">Head:</label>
+        <input class="socials_form_input" type="text" id="lname" name="lname">
 
-        <label for="body">Body:    </label>
-        <input  class="socials_form_body" type="text" id="lname" name="lname"><br>
+        <label for="body">Body:</label>
+        <input  class="socials_form_body" type="text" id="lname" name="lname">
 
+        <label></label>
         <input class="socials_form_button" type="submit" value="Submit">
       </form>
       <div class="socials_buttons">
-        <button class="socials_button">Facebook</button>
-        <button class="socials_button">Instagram</button>
-        <button class="socials_button">Twitter</button>
+        <button class="socials_button">
+          <a class="Socials_media_icon" href="https://en-gb.facebook.com/">
+            <img
+              class="navigation_logo_image"
+              src="../Assets/facebook.png"
+              alt="nav_logo"
+            />
+          </a>
+        </button>
+        <button class="socials_button">
+          <a class="Socials_media_icon" href="https://www.instagram.com/">
+            <img
+              class="navigation_logo_image"
+              src="../Assets/instagram.png"
+              alt="nav_logo"
+            />
+        </button>
+        <button class="socials_button">
+          <a class="Socials_media_icon" href="https://x.com/?lang=en">
+            <img
+              class="navigation_logo_image"
+              src="../Assets/twitter.png"
+              alt="nav_logo"
+            />
+        </button>
       </div>
+
+
     </div>
+    <div class="footer">
+      <p>Made by Maximillian Yermalouski 2024</p>
+    </div>
+    
   </body>
 </html>

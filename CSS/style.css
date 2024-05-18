@@ -542,6 +542,20 @@ h3 {
 
 /* Socials page styling */
 
+.socials_body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.socials_title {
+  font-size: 72px;
+  font-weight: lighter;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .socials_information {
   display: flex;
   flex-direction: column;
@@ -549,36 +563,97 @@ h3 {
   justify-content: center;
 }
 .socials_form {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 55px 560px;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px; 
+}
+
+label{
+  font-weight: bolder;
 }
 
 .socials_form_input {
   width: 500px;
-  height: 25px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  height: 35px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  font-weight: lighter;
 }
 
 .socials_form_body {
   width: 500px;
-  height: 50px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  height: 100px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  font-weight: lighter;
 }
 
 .socials_form_button {
   width: 505px;
   height: 50px;
-  margin-left: 65px;
 
   margin-top: 25px;
   margin-bottom: 25px;
+
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  font-weight: lighter;
+
+  font-size: 18px;
+
+  transition: 0.3s;
+
 }
 
-.socials_button {
+.socials_buttons{
+  display: flex;
+  flex-direction: row;
+}
+
+.socials_button{
   width: 150px;
   height: 150px;
-  margin: 50px;
+  margin: 10px;
+}
+
+.socials_button{
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .socials_form_input{
+    width: 90vw;
+  }
+
+  .socials_form_body{
+    width: 90vw;
+  }
+
+  .socials_form_button{
+    width: 90vw;
+  }
+
+  .socials_button{
+    width: 100px;
+  }
 }
