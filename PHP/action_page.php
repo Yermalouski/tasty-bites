@@ -1,2 +1,2 @@
 <?php
-echo("Tasty Mites")
+echo("Tasty Bites")

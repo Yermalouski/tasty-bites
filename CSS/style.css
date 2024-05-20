@@ -4,6 +4,7 @@
   padding: 0;
   font-family: "Quicksand", sans-serif;
   text-rendering: optimizeLegibility;
+  box-sizing: border-box;
 }
 
 h3 {
@@ -96,7 +97,7 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 635px) {
   .navigation_button {
     font-size: 10px;
     margin-left: 8px;
@@ -205,7 +206,7 @@ h3 {
   justify-content: space-around;
   flex-direction: column;
   width: 740px;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 10vh);
 }
 
 .home_main {
@@ -426,6 +427,68 @@ h3 {
 
 /* Gallery page styling */
 
+.gallery_information{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.gallery_title{
+  font-size: 72px;
+  font-weight: lighter;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+}
+
+.gallery_images{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery_image_1{
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery_image_2{
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery_image_3{
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery_image_4{
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery_image_5{
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+    display: block;
+}
+
+@media only screen and (max-width: 815px) {
+  .gallery_images{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1000px) {}
+
 /* Location page styling */
 
 .location_information {
@@ -504,11 +567,6 @@ h3 {
   transition: 0.3s;
 }
 
-@media only screen and (max-width: 1400px) {
-  .location_information {
-    flex-direction: column;
-  }
-
   .location_map {
     height: 30vh;
   }
@@ -522,7 +580,6 @@ h3 {
   .location_information_text {
     font-size: 16px;
   }
-}
 
 @media only screen and (max-width: 400px) {
   .location_map {
@@ -605,7 +662,7 @@ label{
 }
 
 .socials_form_button {
-  width: 505px;
+  width: 500px;
   height: 50px;
 
   margin-top: 25px;
@@ -620,9 +677,6 @@ label{
   font-weight: lighter;
 
   font-size: 18px;
-
-  transition: 0.3s;
-
 }
 
 .socials_buttons{
@@ -634,26 +688,38 @@ label{
   width: 150px;
   height: 150px;
   margin: 10px;
-}
-
-.socials_button{
   border: none;
 }
 
-@media only screen and (max-width: 600px) {
-  .socials_form_input{
+@media only screen and (max-width: 650px) {
+  .socials_form {
     width: 90vw;
+    contain: content;
+  }
+
+  .socials_form_input{
+    width: 70vw;
   }
 
   .socials_form_body{
-    width: 90vw;
+    width: 70VW;
   }
 
   .socials_form_button{
-    width: 90vw;
+    width: 70VW;
   }
 
   .socials_button{
     width: 100px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .socials_button{
+    width: 25vw;
+  }
+
+  .socials_button_icon{
+    width: 50px;
   }
 }
