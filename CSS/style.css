@@ -135,6 +135,89 @@ h3 {
   font-size: 24px;
 }
 
+/* Global form styling */
+
+form {
+  display: grid;
+  grid-template-columns: 60px 550px 60px;
+  margin-top: 25px;
+  margin-bottom: 25px; 
+  align-items: center;
+}
+
+label{
+  font-weight: bolder;
+}
+
+.form_input {
+  width: 500px;
+  height: 35px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  font-weight: lighter;
+  padding: 5px;
+}
+
+.form_input_tall {
+  width: 500px;
+  height: 100px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  font-weight: lighter;
+}
+
+.form_button {
+  width: 500px;
+  height: 50px;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  font-weight: lighter;
+
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 650px) {
+  form {
+    width: 90vw;
+    contain: content;
+  }
+
+  .form_input{
+    width: 70vw;
+  }
+
+  .form_input_tall{
+    width: 70VW;
+  }
+
+  .form_button{
+    width: 70VW;
+  }
+
+}
+
 /* Global footer page styling */
 
 .footer {
@@ -425,6 +508,37 @@ h3 {
 
 /* Booking page styling */
 
+.booking_body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking_title {
+  font-size: 72px;
+  font-weight: lighter;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.booking_information{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.booking_information_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Gallery page styling */
 
 .gallery_information{
@@ -514,6 +628,7 @@ h3 {
   border-style: none;
   width: 500px;
   height: 400px;
+  padding: 20px;
 
   color: black;
   border-color: black;
@@ -528,7 +643,8 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 40vw;
+  padding: 20px;
+  width: 90%;
 }
 
 .location_title {
@@ -581,9 +697,16 @@ h3 {
     font-size: 16px;
   }
 
+@media only screen and (max-width: 1000px) {
+  .location_information {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .location_map {
-    height: 30vh;
+    height: 25vh;
   }
 
   .location_title {
@@ -611,6 +734,7 @@ h3 {
   font-weight: lighter;
   padding-top: 25px;
   padding-bottom: 25px;
+  text-align: center;
 }
 
 .socials_information {
@@ -618,65 +742,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.socials_form {
-  display: grid;
-  grid-template-columns: 55px 560px;
-  align-items: center;
-  margin-top: 25px;
-  margin-bottom: 25px; 
-}
-
-label{
-  font-weight: bolder;
-}
-
-.socials_form_input {
-  width: 500px;
-  height: 35px;
-  margin-top: 7px;
-  margin-bottom: 7px;
-
-  color: black;
-  background-color: white;
-  border-color: black;
-  border-radius: 10px;
-  border-width: 3px;
-  border-style: solid;
-  font-weight: lighter;
-}
-
-.socials_form_body {
-  width: 500px;
-  height: 100px;
-  margin-top: 7px;
-  margin-bottom: 7px;
-
-  color: black;
-  background-color: white;
-  border-color: black;
-  border-radius: 10px;
-  border-width: 3px;
-  border-style: solid;
-  font-weight: lighter;
-}
-
-.socials_form_button {
-  width: 500px;
-  height: 50px;
-
-  margin-top: 25px;
-  margin-bottom: 25px;
-
-  color: black;
-  background-color: white;
-  border-color: black;
-  border-radius: 10px;
-  border-width: 3px;
-  border-style: solid;
-  font-weight: lighter;
-
-  font-size: 18px;
 }
 
 .socials_buttons{
@@ -692,23 +757,6 @@ label{
 }
 
 @media only screen and (max-width: 650px) {
-  .socials_form {
-    width: 90vw;
-    contain: content;
-  }
-
-  .socials_form_input{
-    width: 70vw;
-  }
-
-  .socials_form_body{
-    width: 70VW;
-  }
-
-  .socials_form_button{
-    width: 70VW;
-  }
-
   .socials_button{
     width: 100px;
   }
