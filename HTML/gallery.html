@@ -11,6 +11,7 @@
       href="https://api.fontshare.com/v2/css?f[]=quicksand@500&f[]=general-sans@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/JavaScript/PhotoSwipe/photoswipe.css" />
     <title>Tasty Bites</title>
   </head>
 
@@ -58,31 +59,51 @@
     <!-- Gallery Page -->
     <div class="gallery_information">
       <h3 class="gallery_title">Gallery.</h3>
-      <div class="gallery_images">
+      <div class="gallery_images" id="my-gallery">
 
         <div class="gallery_images_section_1">
-          <img class="gallery_image_1" src="../Assets/gallery_image1.jpg">
+          <a data-pswp-width="3744" data-pswp-height="3744" target="_blank" href="../Assets/gallery_image1.jpg">
+            <img class="gallery_image_1" src="../Assets/gallery_image1.jpg">
+          </a>
         </div>
         <div class="gallery_images_section_2">
-          <img class="gallery_image_2" src="../Assets/gallery_image2.jpg">
-          <img class="gallery_image_3" src="../Assets/gallery_image3.jpg">
+          <a data-pswp-width="4928" data-pswp-height="3264" target="_blank" href="../Assets/gallery_image2.jpg">
+            <img class="gallery_image_2" src="../Assets/gallery_image2.jpg">
+          </a>
+          <a data-pswp-width="4928" data-pswp-height="3264" target="_blank" href="../Assets/gallery_image3.jpg">
+            <img class="gallery_image_3" src="../Assets/gallery_image3.jpg">
+          </a>
         </div>
         <div class="gallery_images_section_3">
-          <img class="gallery_image_4" src="../Assets/gallery_image4.jpg">
-          <img class="gallery_image_5" src="../Assets/gallery_image5.jpg">
+          <a data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="../Assets/gallery_image4.jpg">
+            <img class="gallery_image_4" src="../Assets/gallery_image4.jpg">
+          </a>
+          <a data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="../Assets/gallery_image5.jpg">
+            <img class="gallery_image_5" src="../Assets/gallery_image5.jpg">
+          </a>
         </div>
         <div class="gallery_images_section_3">
-          <img class="gallery_image_4" src="../Assets/gallery_image6.jpg">
-          <img class="gallery_image_5" src="../Assets/gallery_image7.jpg">
+          <a data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="../Assets/gallery_image6.jpg">
+            <img class="gallery_image_4" src="../Assets/gallery_image6.jpg">
+          </a>
+          <a data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="../Assets/gallery_image7.jpg">
+            <img class="gallery_image_5" src="../Assets/gallery_image7.jpg">
+          </a>
         </div>
         <div class="gallery_images_section_2">
-          <img class="gallery_image_2" src="../Assets/gallery_image8.jpg">
-          <img class="gallery_image_3" src="../Assets/gallery_image9.jpg">
+          <a data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="../Assets/gallery_image8.jpg">
+            <img class="gallery_image_2" src="../Assets/gallery_image8.jpg">
+          </a>
+          <a data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="../Assets/gallery_image9.jpg">
+            <img class="gallery_image_3" src="../Assets/gallery_image9.jpg">
+          </a>
         </div>
         <div class="gallery_images_section_1">
-          <img class="gallery_image_1" src="../Assets/gallery_image10.jpg">
+          <a data-pswp-width="1669" data-pswp-height="2500" target="_blank" href="../Assets/gallery_image10.jpg">
+            <img class="gallery_image_1" src="../Assets/gallery_image10.jpg">
+          </a>
         </div>
-        
+
       </div>
     </div>
 
@@ -90,4 +111,14 @@
       <p>Made by Maximillian Yermalouski 2024</p>
     </div>
   </body>
+
+  <script type="module">
+    import PhotoSwipeLightbox from '/JavaScript/PhotoSwipe/photoswipe-lightbox.esm.js';
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '#my-gallery',
+      children: 'div > a',
+      pswpModule: () => import('/JavaScript/PhotoSwipe/photoswipe.esm.js')
+    });
+    lightbox.init();
+  </script>
 </html>
