@@ -61,35 +61,53 @@
 
     <img class="booking_image" src="../Assets/booking.png"
 
-    <div class="booking_information">
-      <form class="booking_form" action="mailto:6059722@student.gbmc.ac.uk" method="get">
-        <label for="fname">Name</label>
-        <input class="form_input" type="text" name="fname">
-        <div></div>
-        
-        <label for="email">Email</label>
-        <input class="form_input" type="email" name ='email'>
-        <div></div>
-
-        <label for="tel">Phone</label>
-        <input class="form_input" type="tel">
-        <div></div>
-
-        <label for="date">Date</label>
-        <input class="form_input" type='date'>
-        <div></div>
-
-        <label for="time">Time</label>
-        <input class="form_input" type='time'>
-        <div></div>
-
-        <label for="number">Guests</label>
-        <input  class="form_input" type="number">
-        <div></div>
-
-        <div></div>
-        <input class="form_button" type="submit" value="Submit">
-      </form>
+      <div class="booking_information">
+        <form class="booking_form" action="mailto:6059722@student.gbmc.ac.uk" method="post" enctype="text/plain">
+          <label for="name">
+            Name
+          </label>
+          <input class="form_input" type="text" name="name" id="name">
+  
+          <div></div>
+          
+          <label for="email">
+            Email
+          </label>
+          <input class="form_input" type="email" name="email" id="email">
+  
+          <div></div>
+  
+          <label for="phone">
+            Phone
+          </label>
+          <input class="form_input" type="number" name="phone" id="phone">
+  
+          <div></div>
+  
+          <label for="date">
+            Date
+          </label>
+          <input class="form_input" type='date' name="date" id="date">
+  
+          <div></div>
+  
+          <label for="Time">
+            Time
+          </label>
+          <input class="form_input" type='time' name="Time" id="Time">
+  
+          <div></div>
+  
+          <label for="number">
+            Guests
+          </label>
+          <input  class="form_input" type="number" name="number" id="number">
+          <div></div>
+  
+          <div></div>
+          <input class="form_button" type="submit" value="Submit">
+        </form>
+      </div>
 
       <div class="booking_information_box">
         <h3 class="sub_title">Terms & conditions</h3>
