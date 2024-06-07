@@ -490,12 +490,14 @@ label{
   display: flex;
   flex-direction: column;
   padding-left: 100px;
-  text-align: end;
+  text-align: center;
 }
 
 .events_information_image {
   display: inline-block;
-  height: 300px;
+  height: 260px;
+  width: 450px;
+  border-radius: 20px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -578,8 +580,8 @@ label{
   flex-direction: column;
   align-items: center;
 
-  margin-top: 25px;
-  margin-bottom: 25px; 
+  margin-top: 50px;
+  margin-bottom: 50px; 
 }
 
 @media only screen and (max-width: 650px) {
@@ -659,7 +661,7 @@ label{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding-left: 20px;
   padding-right: 20px;
   height: 80vh;
@@ -670,7 +672,7 @@ label{
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 40vw;
+  margin: 20px;
 }
 
 .location_map {
@@ -678,8 +680,6 @@ label{
   border-style: none;
   width: 500px;
   height: 400px;
-  padding: 20px;
-
   color: black;
   border-color: black;
   border-radius: 15px;
@@ -694,7 +694,6 @@ label{
   justify-content: center;
   text-align: center;
   padding: 20px;
-  width: 90%;
 }
 
 .location_title {
@@ -707,6 +706,7 @@ label{
 .location_information_text {
   font-weight: lighter;
   font-size: 24px;
+  max-width: 800px;
 }
 
 .location_button {
@@ -796,6 +796,7 @@ label{
   height: 150px;
   margin: 10px;
   border: none;
+  background-color: white;
 }
 
 @media only screen and (max-width: 650px) {
