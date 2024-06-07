@@ -193,6 +193,7 @@ label{
   border-width: 3px;
   border-style: solid;
   font-weight: lighter;
+  padding: 5px;
 }
 
 .form_button {
