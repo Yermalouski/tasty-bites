@@ -11,7 +11,7 @@
       href="https://api.fontshare.com/v2/css?f[]=quicksand@500&f[]=general-sans@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/JavaScript/photoswipe.css" />
+    <link rel="stylesheet" href="../JavaScript/photoswipe.css" />
     <title>Tasty Bites</title>
   </head>
 
@@ -210,11 +210,11 @@
   </body>
 
   <script type="module">
-    import PhotoSwipeLightbox from "/JavaScript/photoswipe-lightbox.esm.js";
+    import PhotoSwipeLightbox from "../JavaScript/photoswipe-lightbox.esm.js";
     const lightbox = new PhotoSwipeLightbox({
       gallery: "#my-gallery",
       children: "div > a",
-      pswpModule: () => import("/JavaScript/photoswipe.esm.js"),
+      pswpModule: () => import("../JavaScript/photoswipe.esm.js"),
     });
     lightbox.init();
   </script>
