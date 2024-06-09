@@ -790,8 +790,8 @@ label{
 
 @media only screen and (max-width: 1000px) {
   .location_information {
-    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .location_map {
