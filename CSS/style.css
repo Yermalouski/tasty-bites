@@ -791,11 +791,14 @@ label{
 @media only screen and (max-width: 1000px) {
   .location_information {
     flex-direction: column;
-    flex-wrap: wrap;
   }
 
   .location_map {
     width: 90vw;
+  }
+
+  .location_right {
+    height: 300px;
   }
 }
 
@@ -821,7 +824,6 @@ label{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
 }
 
 .socials_information {
