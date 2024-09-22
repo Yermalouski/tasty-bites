@@ -1,1 +1,1 @@
-https://yermalouski.github.io/Tasty-Bites/
+https://yermalouski.github.io/tasty-bites/
